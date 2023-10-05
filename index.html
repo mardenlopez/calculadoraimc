@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+    />
+    
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="img/personal.svg" alt="">
+            <span>Calculadora de imc</span>
+        </div>
+        
+        <form id="form" class="form">
+
+            
+            <div class="form-control">
+                
+                <input id="weight" autocomplete="of" maxlength="5" type="number" step="0.01" required> 
+                <label for="weight">INFORME SEU PESO</label>
+                <small>Exemplo 70,5</small>
+                
+            </div>
+            
+            <div class="form-control">
+                
+                <input id="height" autocomplete="off" maxlength="4" type="number" step="0.01" required>
+                <label for="height">INFORME SUA ALTURA</label>
+                <small>Exemplo 1,70</small>
+
+                
+            </div>
+
+            
+            <button type="submit">Calcular</button>
+            <button id="btnClear" class="btnClear" type="reset">Limpar</button>
+
+            
+            <p class="p">
+                <a target="_blank" href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html">Mais informações</a>
+                
+            </p>
+            
+
+        </form>
+
+        <div id="resultImc" class="result hide">
+            <div class="resImc">
+                <span> SEU IMC:</span>
+                <h5 id="imc"></h5>
+                <h3 id="description"></h3>
+            </div>
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>RESULTADO</th>
+                </tr>
+
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+                
+            </table>
+            <button id="btnBack" class="btnBack" type="reset">Novo calculo</button>
+            <a target="_blank" href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html">Mais informações</a>
+        </div>
+        
+    </div>
+    
+    <script src="js/scripts.js"></script>
+    
+</body>
+
+</html>

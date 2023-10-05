@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(100deg, #fff 0%, #9b9a9a 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff6c;
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    color: #4b4b4b;
+    font-size: 16px;
+    text-transform: uppercase;
+    gap: 15px;
+    color: #1943ad;
+}
+
+
+.header img {
+    width: 15%;
+}
+
+.form{
+    padding: 20px;
+    
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-control label {
+    color: #010101;
+    padding: 2px;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    color: #9b9a9a;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+
+    
+}
+
+.form-control input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 2px solid #9b9a9a;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    transition: 0.2s ease;
+    margin-bottom: 15px;
+}
+.form-control input::-webkit-outer-spin-button,
+.form-control input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+
+.form-control input:focus, .form-control input:focus {
+    border-bottom: 2px solid #1943ad;
+}
+
+.form-control input:focus ~ label, .form-control input:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: #1943ad;
+}
+
+.form-control small {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+    font-size: 12px;
+    display: none;
+    transition: 5s ease-in;
+}
+
+.form-control input:focus ~ small {
+    display: block;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.resImc {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-bottom:  35px;
+    
+    padding: 10px;
+   
+}
+.result h5 {
+    font-size: 35px;
+    
+}
+
+.result h3 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+.form button{
+    background-color: #52327c;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+    
+}
+.form .btnClear {
+    background-color: #646464;
+}
+
+.form .btnClear:hover {
+    background-color: #4d4d4d;
+}
+.form button:hover {
+    background-color: #48217c;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 25px;
+}
+table ,tr, td{
+
+    border: 1px solid #646464;
+    border-collapse: collapse;
+    padding: 0 10px 0 10px;
+ 
+
+}
+
+tr:nth-child(even){
+    background-color: #cecece;
+}
+
+
+
+
+.result .btnBack{
+    background-color: #52327c;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+    
+}
+
+ 
+
+.form  p {
+    font-size: 16px;
+    text-align: center;
+   
+}
+
+
+
+
+
+.result.hide {
+    display: none;
+}
+
+.form.hide {
+    display: none ;
+}
+
+.pesobaixo {
+    color: #fcbd16;
+}
+.normal {
+    color: #80bf66;
+}
+.sobrepeso {
+    color: #f18815;
+}
+.obesidade1 {
+    color: #fb5d04;
+}
+.obesidade2 {
+    color: #e52812;
+}
+.obesidade3 {
+    color: #801711;
+}
+
+.black {
+    color: #000000;
+}
